@@ -1,3 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-gradient: linear-gradient(
+    45deg,
+    #050505,
+    #050505,
+    #1B9AAA,
+    #050505,
+    #050505
+  );
+
+  --black-gradient: linear-gradient(
+    #050505,
+    #F5F1E3,
+    #FFFFFF
+  );
+}
+
 html,
 body {
   padding: 0;
@@ -6,21 +27,81 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Text Gradients */
+.shifting-text {
+  background-image: var(--text-gradient);
+  background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  animation: bg-animation 1s infinite alternate;
 }
 
-* {
-  box-sizing: border-box;
+@keyframes bg-animation {
+  0% {background-position: left}
+  100% {background-position: right}
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.black-gradient {
+  background-image: var(--black-gradient);
+  background-size: 800%;
 }
+
+
+/* Side Animations */
+.hidden-item {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
+}
+
+.show-item {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+
+
+/* Flipping Tile Component */
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.my-rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.group:hover .group-hover\:bottom-20 {
+  bottom: 5rem;
+}
+
+.group:hover .group-hover\:scale-125 {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:my-rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
