@@ -43,7 +43,7 @@ export default function ModulePage({ module, moduleData }) {
             toast.error("Trying to be sneaky, huh.")
             router.push('/');
         }
-    }, [])
+    }, [router])
 
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);

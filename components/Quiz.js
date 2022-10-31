@@ -25,6 +25,8 @@ export default function Quiz({ moduleData, module }) {
         getData();
     }, []);
 
+
+
     const QuizCard = ({ data, no }) => (
         <div className="w-[300px] h-[700px] pb-12 bg-transparent cursor-pointer group perspective mx-10">
             <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
@@ -64,7 +66,7 @@ export default function Quiz({ moduleData, module }) {
                 
                 <div className='flex flex-col gap-3 pt-12'>
                     <p className='opacity-70 text-sm'>All question have been sources directly from:</p>
-                    <p className='text-strong font-thin text-lg'>'AWS Certified Cloud Practitioner STUDY GUIDE'</p>
+                    <p className='text-strong font-thin text-lg'>{"'"}AWS Certified Cloud Practitioner STUDY GUIDE{"'"}</p>
                     <p className='opacity-70'>written by B. Piper and D. Clinton</p>
                     <p className='opacity-20 text-xs pt-8 text-dark'>(Trying to save myself a lawsuit.)</p>
                 </div>

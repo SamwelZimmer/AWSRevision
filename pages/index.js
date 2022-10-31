@@ -127,7 +127,7 @@ export default function Home() {
                 <input value={signupPassword} onChange={(e) => setSignupPassword(e.target.value)} required type="password" id="password" className="block w-full p-2.5 text-sm placeholder:opacity-50 text-dark bg-white border border-dark border-opacity-30 outline-strong focus:outline-none focus:border-strong" placeholder="(I won't tell)" />
             </div>
 
-            <motion.button type='submit' className='text-dark bg-soft hover:text-strong hover:bg-transparent self-center w-1/2 border border-dark p-3  hover:border-strong' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97}}>Let's go</motion.button>
+            <motion.button type='submit' className='text-dark bg-soft hover:text-strong hover:bg-transparent self-center w-1/2 border border-dark p-3  hover:border-strong' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97}}>Let{"'"}s go</motion.button>
           </form>
         : 
           <form onSubmit={handleLogInSubmit} className='w-full h-full justify-between flex flex-col gap-6'>
@@ -141,7 +141,7 @@ export default function Home() {
                 <input value={loginPassword} onChange={(e) => setLoginPassword(e.target.value)} required type="password" id="password" className="block w-full p-2.5 text-sm placeholder:opacity-50 text-dark bg-white border border-dark border-opacity-30 outline-strong focus:outline-none focus:border-strong" placeholder="(I won't tell)" />
             </div>
 
-            <motion.button type='submit' className='text-dark bg-soft hover:text-strong hover:bg-transparent self-center w-1/2 border border-dark p-3  hover:border-strong' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97}}>Let's go</motion.button>
+            <motion.button type='submit' className='text-dark bg-soft hover:text-strong hover:bg-transparent self-center w-1/2 border border-dark p-3  hover:border-strong' whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97}}>Let{"'"}s go</motion.button>
           </form>
         }
         </div>
@@ -234,7 +234,7 @@ export default function Home() {
 
       <div className='pt-72 font-thin text-3xl w-full flex justify-center'>
         <p className='w-1/2 text-center absolute bottom-[45%]'>unneccesary white space</p>
-        <p className='w-1/2 text-center absolute bottom-[25%]'>it's not worth scrolling</p>
+        <p className='w-1/2 text-center absolute bottom-[25%]'>it{"'"}s not worth scrolling</p>
         <p className='w-1/2 text-center absolute bottom-[3%]'>told you</p>
         <motion.button onClick={topScroll} whileHover={{ scale: 1.1, translateY: -5 }} whileTap={{ scale: 0.9, translateY: 20 }} className='w-1/2 text-center absolute bottom-[1%] flex flex-row justify-center items-center'><BiUpArrow /></motion.button>
       </div>

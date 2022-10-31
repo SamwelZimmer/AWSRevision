@@ -38,7 +38,7 @@ const HomePage = () => {
 
           <h3 className='text-4xl font-thin opacity-40'>Uhh..</h3>
           <h2 className='text-xl opacity-60'>... Basically ...</h2>
-          <p className='text-base opacity-40'>... I couldn't find a good quizlet so I made a site for </p>
+          <p className='text-base opacity-40'>... I couldn{"'"}t find a good quizlet so I made a site for </p>
           <h1 className='text-4xl'>AWS Revision<br /> <span className='shifting-text'>Flash </span>Cards</h1>
 
         </section>
