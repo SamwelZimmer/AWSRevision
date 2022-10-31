@@ -31,7 +31,7 @@ return (
     <nav className="absolute top-0 w-full z-50 px-6 sm:px-12 py-6 bg-transparent">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
             <Link href="/home" className="flex items-center">
-                <span className="self-center text-xl font-semibold whitespace-nowrap">Site Name</span>
+                <span className="self-center text-xl font-semibold whitespace-nowrap text-gradient">AWS Revision</span>
             </Link>
             <button onClick={toggleDropdown} data-collapse-toggle="mobile-menu" type="button" className="inline-flex justify-center items-center ml-3 text-dark md:hidden hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-strong" aria-controls="mobile-menu-2" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
